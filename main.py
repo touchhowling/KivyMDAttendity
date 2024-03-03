@@ -6,19 +6,18 @@ from kivymd.uix.datatables import MDDataTable
 from kivymd.uix.floatlayout import MDFloatLayout
 from kivymd.uix.button import MDRectangleFlatButton, MDRaisedButton
 from kivy.uix.screenmanager import ScreenManager, NoTransition
-from kivy.clock import Clock
-from concurrent.futures import ProcessPoolExecutor
+
 import backend
 from plyer import filechooser
-from functools import partial
+
 import pandas as pd
 import multiprocessing
-from multiprocessing.pool import ThreadPool
+
 import os
 import encoding
-import class_manage
+
 import shutil
-import subprocess
+
 
 
 class LoginScreen(Screen):
