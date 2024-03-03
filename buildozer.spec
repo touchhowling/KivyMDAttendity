@@ -1,7 +1,7 @@
 [app]
 
 # (str) Title of your application
-title = Attendity
+title = My Application
 
 # (str) Package name
 package.name = myapp
@@ -36,8 +36,8 @@ version = 0.1
 # version.filename = %(source.dir)s/main.py
 
 # (list) Application requirements
-# comma separated e.g. requirements = sqlite3,kivy,kivy-garden,pillow,dlib,openpyxl,opencv-python-headless,matplotlib,numpy,pandas,urllib3,urlparse3,xlrd,plyer,kivy-uix,cmake,pyarrow,face-recognition
-requirements = kivy,pickle,openpyxl,kivy-garden,pillow,dlib,openpyxl,opencv-python-headless,matplotlib,numpy,pandas,urllib3,urlparse3,xlrd,plyer,kivy-uix,cmake,pyarrow,face-recognition,multiprocess
+# comma separated e.g. requirements = sqlite3,kivy
+requirements = python3,kivy,pickle,openpyxl,kivy-garden,pillow,dlib,openpyxl,opencv-python-headless,matplotlib,numpy,pandas,urllib3,urlparse3,xlrd,plyer,kivy-uix,cmake,pyarrow,face-recognition,multiprocess
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -51,7 +51,7 @@ requirements = kivy,pickle,openpyxl,kivy-garden,pillow,dlib,openpyxl,opencv-pyth
 
 # (list) Supported orientations
 # Valid options are: landscape, portrait, portrait-reverse or landscape-reverse
-orientation = landscape
+orientation = portrait
 
 # (list) List of service to declare
 #services = NAME:ENTRYPOINT_TO_PY,NAME2:ENTRYPOINT2_TO_PY
