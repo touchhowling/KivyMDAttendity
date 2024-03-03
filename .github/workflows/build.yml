@@ -28,7 +28,7 @@ jobs:
           key: ${{ runner.os }}-${{ steps.get-date.outputs.date }}-${{ hashFiles('buildozer.spec') }}
 
       - name: Install autopoint
-        run: sudo apt-get install -y autopoint
+        run: sudo apt-get install -y autopoint gettext
 
       - name: Upgrade packages
         run: sudo apt upgrade -y
