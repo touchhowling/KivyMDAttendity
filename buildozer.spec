@@ -37,8 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy,pickle,openpyxl,kivy-garden,pillow,dlib,openpyxl,opencv-python-headless,matplotlib,numpy,pandas,urllib3,urlparse3,xlrd,plyer,kivy-uix,cmake,pyarrow,face-recognition,multiprocess
-
+requirements = python3,kivy,pickle,openpyxl,kivy-garden,pillow,dlib,openpyxl,opencv-python-headless,matplotlib,numpy,pandas,urllib3,urlparse3,xlrd,plyer,kivy-uix,cmake,pyarrow,face-recognition,multiprocess,shutil
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
