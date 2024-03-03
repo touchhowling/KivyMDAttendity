@@ -10,7 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      # used to cache dependencies with a timeout
       - name: Get Date
         id: get-date
         run: |
@@ -27,6 +26,12 @@ jobs:
         with:
           path: .buildozer
           key: ${{ runner.os }}-${{ steps.get-date.outputs.date }}-${{ hashFiles('buildozer.spec') }}
+
+      - name: Install autopoint
+        run: sudo apt-get install -y autopoint
+
+      - name: Upgrade packages
+        run: sudo apt upgrade -y
 
       - name: Build with Buildozer
         uses: ArtemSBulgakov/buildozer-action@v1
